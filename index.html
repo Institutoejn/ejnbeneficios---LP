@@ -3,90 +3,197 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>EJN Benefícios — Mais oportunidades para a sua próxima fase</title>
-  <meta name="description" content="Mais vantagens no presente. Mais possibilidades para o futuro. Conheça o EJN Benefícios, o clube da Escola Jovens de Negócios para transformar sua rotina.">
+  <title>EJN Benefícios — Mais vantagens no seu dia</title>
+  <meta name="description" content="Cursos, cinema, saúde e mobilidade. Conheça o clube de benefícios da Escola Jovens de Negócios e encontre vantagens para o seu dia a dia.">
   <meta name="theme-color" content="#0a0f2e">
-  <meta property="og:title" content="EJN Benefícios — Sua próxima fase começa aqui">
-  <meta property="og:description" content="Um mundo de benefícios para você viver mais, economizar e ir além.">
+  <meta property="og:title" content="EJN Benefícios — Mais vantagens no seu dia">
+  <meta property="og:description" content="Estudar, sair, se cuidar. Conheça os benefícios e parceiros da EJN.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
   <link rel="icon" href="./assets/favicon.webp" type="image/webp">
-  <link rel="preload" href="./assets/inter-tight.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="preload" href="./assets/inter.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="./assets/inter-tight-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./assets/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="./styles.css">
   <script src="./app.js" defer></script>
 </head>
 <body>
+  <!-- Bootstrap Icons 1.13.1 (MIT). Curated inline sprite: no CDN or icon font. -->
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+    <symbol id="bi-arrow-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"/></symbol>
+    <symbol id="bi-arrow-left-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5m14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5"/></symbol>
+    <symbol id="bi-arrow-left" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/></symbol>
+    <symbol id="bi-arrow-up-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/></symbol>
+    <symbol id="bi-arrow-up" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"/></symbol>
+    <symbol id="bi-book" viewBox="0 0 16 16"><path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/></symbol>
+    <symbol id="bi-bus-front" viewBox="0 0 16 16"><path d="M5 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0m8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-6-1a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2zm1-6c-1.876 0-3.426.109-4.552.226A.5.5 0 0 0 3 4.723v3.554a.5.5 0 0 0 .448.497C4.574 8.891 6.124 9 8 9s3.426-.109 4.552-.226A.5.5 0 0 0 13 8.277V4.723a.5.5 0 0 0-.448-.497A44 44 0 0 0 8 4m0-1c-1.837 0-3.353.107-4.448.22a.5.5 0 1 1-.104-.994A44 44 0 0 1 8 2c1.876 0 3.426.109 4.552.226a.5.5 0 1 1-.104.994A43 43 0 0 0 8 3"/>
+  <path d="M15 8a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1V2.64c0-1.188-.845-2.232-2.064-2.372A44 44 0 0 0 8 0C5.9 0 4.208.136 3.064.268 1.845.408 1 1.452 1 2.64V4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v3.5c0 .818.393 1.544 1 2v2a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5V14h6v1.5a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-2c.607-.456 1-1.182 1-2zM8 1c2.056 0 3.71.134 4.822.261.676.078 1.178.66 1.178 1.379v8.86a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 11.5V2.64c0-.72.502-1.301 1.178-1.379A43 43 0 0 1 8 1"/></symbol>
+    <symbol id="bi-hand-index-thumb" viewBox="0 0 16 16"><path d="M6.75 1a.75.75 0 0 1 .75.75V8a.5.5 0 0 0 1 0V5.467l.086-.004c.317-.012.637-.008.816.027.134.027.294.096.448.182.077.042.15.147.15.314V8a.5.5 0 0 0 1 0V6.435l.106-.01c.316-.024.584-.01.708.04.118.046.3.207.486.43.081.096.15.19.2.259V8.5a.5.5 0 1 0 1 0v-1h.342a1 1 0 0 1 .995 1.1l-.271 2.715a2.5 2.5 0 0 1-.317.991l-1.395 2.442a.5.5 0 0 1-.434.252H6.118a.5.5 0 0 1-.447-.276l-1.232-2.465-2.512-4.185a.517.517 0 0 1 .809-.631l2.41 2.41A.5.5 0 0 0 6 9.5V1.75A.75.75 0 0 1 6.75 1M8.5 4.466V1.75a1.75 1.75 0 1 0-3.5 0v6.543L3.443 6.736A1.517 1.517 0 0 0 1.07 8.588l2.491 4.153 1.215 2.43A1.5 1.5 0 0 0 6.118 16h6.302a1.5 1.5 0 0 0 1.302-.756l1.395-2.441a3.5 3.5 0 0 0 .444-1.389l.271-2.715a2 2 0 0 0-1.99-2.199h-.581a5 5 0 0 0-.195-.248c-.191-.229-.51-.568-.88-.716-.364-.146-.846-.132-1.158-.108l-.132.012a1.26 1.26 0 0 0-.56-.642 2.6 2.6 0 0 0-.738-.288c-.31-.062-.739-.058-1.05-.046zm2.094 2.025"/></symbol>
+    <symbol id="bi-heart-pulse" viewBox="0 0 16 16"><path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053.918 3.995.78 5.323 1.508 7H.43c-2.128-5.697 4.165-8.83 7.394-5.857q.09.083.176.171a3 3 0 0 1 .176-.17c3.23-2.974 9.522.159 7.394 5.856h-1.078c.728-1.677.59-3.005.108-3.947C13.486.878 10.4.28 8.717 2.01zM2.212 10h1.315C4.593 11.183 6.05 12.458 8 13.795c1.949-1.337 3.407-2.612 4.473-3.795h1.315c-1.265 1.566-3.14 3.25-5.788 5-2.648-1.75-4.523-3.434-5.788-5"/>
+  <path d="M10.464 3.314a.5.5 0 0 0-.945.049L7.921 8.956 6.464 5.314a.5.5 0 0 0-.88-.091L3.732 8H.5a.5.5 0 0 0 0 1H4a.5.5 0 0 0 .416-.223l1.473-2.209 1.647 4.118a.5.5 0 0 0 .945-.049l1.598-5.593 1.457 3.642A.5.5 0 0 0 12 9h3.5a.5.5 0 0 0 0-1h-3.162z"/></symbol>
+    <symbol id="bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/></symbol>
+    <symbol id="bi-mouse" viewBox="0 0 16 16"><path d="M8 3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3m4 8a4 4 0 0 1-8 0V5a4 4 0 1 1 8 0zM8 0a5 5 0 0 0-5 5v6a5 5 0 0 0 10 0V5a5 5 0 0 0-5-5"/></symbol>
+    <symbol id="bi-plus" viewBox="0 0 16 16"><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/></symbol>
+    <symbol id="bi-stars" viewBox="0 0 16 16"><path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/></symbol>
+    <symbol id="bi-ticket-perforated" viewBox="0 0 16 16"><path d="M4 4.85v.9h1v-.9zm7 0v.9h1v-.9zm-7 1.8v.9h1v-.9zm7 0v.9h1v-.9zm-7 1.8v.9h1v-.9zm7 0v.9h1v-.9zm-7 1.8v.9h1v-.9zm7 0v.9h1v-.9z"/>
+  <path d="M1.5 3A1.5 1.5 0 0 0 0 4.5V6a.5.5 0 0 0 .5.5 1.5 1.5 0 1 1 0 3 .5.5 0 0 0-.5.5v1.5A1.5 1.5 0 0 0 1.5 13h13a1.5 1.5 0 0 0 1.5-1.5V10a.5.5 0 0 0-.5-.5 1.5 1.5 0 0 1 0-3A.5.5 0 0 0 16 6V4.5A1.5 1.5 0 0 0 14.5 3zM1 4.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v1.05a2.5 2.5 0 0 0 0 4.9v1.05a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-1.05a2.5 2.5 0 0 0 0-4.9z"/></symbol>
+    <symbol id="bi-x" viewBox="0 0 16 16"><path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/></symbol>
+  </svg>
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
-  <div class="announcement">Seu presente com mais vantagens. Seu futuro com mais possibilidades. <span>Isso é EJN.</span> <span aria-hidden="true">↗</span></div>
+  <div class="announcement">Uma iniciativa da Escola Jovens de Negócios. <span>De Rio Preto, para a sua rotina.</span></div>
   <header class="header">
     <div class="container header-inner">
-      <a class="logo" href="#" aria-label="EJN Benefícios — início"><img src="./assets/logo-ejn.webp" width="200" height="50" alt="EJN Benefícios"></a>
-      <button class="menu-toggle" aria-label="Abrir menu" aria-controls="navigation" aria-expanded="false"><span></span><span></span></button>
+      <a class="logo" href="#" aria-label="EJN Benefícios — início"><img src="./assets/logo-ejn.webp" width="600" height="113" alt="EJN Benefícios"></a>
       <nav id="navigation" aria-label="Navegação principal">
-        <a href="#beneficios">Benefícios</a><a href="#como-funciona">Como funciona</a><a href="#instituto">Quem somos</a><a href="#duvidas">Dúvidas</a>
-        <a class="button button-small" href="https://ejnbeneficios.escolajovensdenegocios.com/">Acessar plataforma <span aria-hidden="true">↗</span></a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#duvidas">Dúvidas</a>
+        <a class="button button-small" href="https://ejnbeneficios.escolajovensdenegocios.com/">Acessar plataforma <svg class="bi " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><use href="#bi-arrow-up-right"></use></svg></a>
       </nav>
+      <a class="institute-link" href="https://escolajovensdenegocios.com/" aria-label="Voltar ao site do Instituto EJN"><svg class="bi " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><use href="#bi-arrow-left"></use></svg><span>Instituto EJN</span></a>
+      <button class="menu-toggle" aria-label="Abrir menu" aria-controls="navigation" aria-expanded="false"><svg class="bi menu-open-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><use href="#bi-list"></use></svg><svg class="bi menu-close-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><use href="#bi-x"></use></svg></button>
     </div>
   </header>
   <main id="conteudo">
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <div class="eyebrow"><span class="live-dot"></span> SEU CLUBE. SUA PRÓXIMA FASE.</div>
-          <h1>Mais vantagens.<br>Mais possibilidades.<br><span>Mais você.</span></h1>
-          <p>Da sala de aula ao próximo rolê. Do cuidado com a saúde aos seus novos planos. Um mundo de benefícios para acompanhar o seu ritmo.</p>
-          <div class="hero-actions"><a class="button" href="https://ejnbeneficios.escolajovensdenegocios.com/">Quero fazer parte <span aria-hidden="true">↗</span></a><a class="text-link" href="#beneficios">Explorar benefícios <span aria-hidden="true">↓</span></a></div>
-          <div class="hero-signature"><span class="signature-icon" aria-hidden="true">✦</span><span>Uma iniciativa da <strong>Escola Jovens de Negócios</strong><br>Conectando oportunidades. Transformando futuros.</span></div>
+          <p class="eyebrow"><span class="live-dot"></span> EJN BENEFÍCIOS / FEITO PARA O SEU DIA</p>
+          <h1>O seu dia<br>merece <span>mais.</span></h1>
+          <p class="handwritten hero-note">e o seu bolso agradece.</p>
+          <p class="hero-description">O curso que você quer fazer. O cinema com a turma. O cuidado com a saúde. Encontre vantagens para o que já faz parte da sua vida.</p>
+          <div class="hero-actions">
+            <a class="button" href="https://ejnbeneficios.escolajovensdenegocios.com/">Quero fazer parte <svg class="bi " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><use href="#bi-arrow-up-right"></use></svg></a>
+            <a class="text-link" href="#beneficios">Ver os benefícios <svg class="bi " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><use href="#bi-arrow-down"></use></svg></a>
+          </div>
+          <div class="hero-signature"><svg class="bi " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><use href="#bi-stars"></use></svg><p><strong>Escola Jovens de Negócios</strong><br>Educação empreendedora. Oportunidades de verdade.</p></div>
         </div>
         <div class="hero-art">
-          <div class="orb orb-one"></div><div class="orb orb-two"></div><div class="orbit"></div>
-          <span class="art-word" aria-hidden="true">PRÓXIMA<br>FASE.</span>
-          <img class="hero-person" src="./assets/jovens-ejn.webp" width="1086" height="1448" alt="Jovem com o cartão EJN Benefícios na nova identidade violeta" fetchpriority="high">
-          <div class="floating-tag tag-top"><span class="tag-icon" aria-hidden="true">✦</span><div>Seu próximo passo<strong>tem mais vantagens.</strong></div></div>
-          <div class="floating-tag tag-bottom"><span class="tag-icon" aria-hidden="true">↗</span><div>Novas experiências.<strong>Novas possibilidades.</strong></div></div>
-          <span class="art-caption">FEITO PARA ACOMPANHAR VOCÊ.</span>
+          <span class="art-index" aria-hidden="true">EJN / 01</span>
+          <div class="hero-disc" aria-hidden="true"></div>
+          <img class="hero-person" src="./assets/jovens-ejn-640.webp" srcset="./assets/jovens-ejn-400.webp 400w, ./assets/jovens-ejn-640.webp 640w, ./assets/jovens-ejn-960.webp 960w" sizes="(max-width: 600px) 340px, (max-width: 900px) 400px, 520px" width="1086" height="1448" alt="Jovem com o cartão EJN Benefícios na identidade violeta" fetchpriority="high" decoding="async">
+          <div class="hero-stamp"><svg class="bi " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><use href="#bi-stars"></use></svg><span>Seu clube.<br>Do seu jeito.</span></div>
+          <span class="art-caption">ESTUDAR. SAIR. SE CUIDAR. REPETIR.</span>
         </div>
       </div>
     </section>
-    <div class="category-ribbon" aria-label="Categorias de benefícios"><div class="container"><span>Educação <i>✦</i></span><span>Saúde <i>✦</i></span><span>Lazer <i>✦</i></span><span>Cultura <i>✦</i></span><span>Mobilidade <i>✦</i></span><span>Seu futuro <i>↗</i></span></div></div>
+
+    <div class="category-ribbon" aria-label="Categorias de benefícios">
+      <div class="container"><span><svg class="bi " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><use href="#bi-book"></use></svg> Educação</span><span><svg class="bi " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><use href="#bi-heart-pulse"></use></svg> Saúde</span><span><svg class="bi " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><use href="#bi-ticket-perforated"></use></svg> Lazer & cultura</span><span><svg class="bi " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><use href="#bi-bus-front"></use></svg> Mobilidade</span><a href="#beneficios">Tem mais por aqui <svg class="bi " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><use href="#bi-arrow-down"></use></svg></a></div>
+    </div>
 
     <section class="section benefits" id="beneficios">
       <div class="container">
-        <div class="section-heading"><div><p class="eyebrow">VANTAGENS QUE FAZEM SENTIDO</p><h2>Sua rotina tem muito.<br><span>Aproveite muito mais.</span></h2></div><p>Benefícios que acompanham a vida real.<br>Escolha o que combina com o seu momento e descubra novas possibilidades.</p></div>
-        <div class="benefit-grid">
-          <article class="benefit-card benefit-featured"><div class="card-top"><span class="line-icon" data-icon="book"></span><span class="card-number">01 / APRENDER</span></div><div><h3>Conhecimento que<br>abre caminhos.</h3><p>Vantagens em cursos, livros e educação para investir no que ninguém tira de você.</p></div><a href="https://ejnbeneficios.escolajovensdenegocios.com/" aria-label="Consultar benefícios de educação na plataforma">Explore educação <span aria-hidden="true">↗</span></a><span class="book-art" aria-hidden="true">↗</span></article>
-          <article class="benefit-card"><div class="card-top"><span class="line-icon" data-icon="heart"></span><span class="card-number">02 / CUIDAR</span></div><div><h3>Seu bem-estar<br>vem primeiro.</h3><p>Benefícios em saúde e medicamentos para cuidar de você no dia a dia.</p></div><a href="https://ejnbeneficios.escolajovensdenegocios.com/" aria-label="Consultar benefícios de saúde na plataforma">Explore saúde <span aria-hidden="true">↗</span></a></article>
-          <article class="benefit-card"><div class="card-top"><span class="line-icon" data-icon="ticket"></span><span class="card-number">03 / VIVER</span></div><div><h3>O próximo rolê<br>já tem companhia.</h3><p>Cinema, cultura e lazer. Mais oportunidades de colecionar bons momentos.</p></div><a href="https://ejnbeneficios.escolajovensdenegocios.com/" aria-label="Consultar benefícios de lazer na plataforma">Explore experiências <span aria-hidden="true">↗</span></a></article>
-          <article class="benefit-card"><div class="card-top"><span class="line-icon" data-icon="bus"></span><span class="card-number">04 / EXPLORAR</span></div><div><h3>Mais caminhos.<br>Menos limites.</h3><p>Conheça as vantagens em mobilidade para facilitar seus trajetos e sua rotina.</p></div><a href="https://ejnbeneficios.escolajovensdenegocios.com/" aria-label="Consultar benefícios de mobilidade na plataforma">Explore mobilidade <span aria-hidden="true">↗</span></a></article>
+        <div class="section-heading" data-reveal>
+          <div><p class="eyebrow">01 / NA PRÁTICA</p><h2>O que cabe<br>na sua <span>rotina?</span></h2></div>
+          <p>Tem dia de estudar e dia de sair.<br>Tem também o que não pode esperar.<br>O clube acompanha esses momentos.</p>
         </div>
-        <p class="availability">Consulte na plataforma os parceiros, a disponibilidade e as condições de cada benefício.</p>
+        <div class="benefit-grid">
+          <article class="benefit-card benefit-featured" data-reveal>
+            <div class="card-top"><span class="line-icon"><svg class="bi " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><use href="#bi-book"></use></svg></span><span class="card-number">EDUCAÇÃO</span></div>
+            <div><h3>Aquele curso<br>que você queria<br><span>fazer.</span></h3><p>Condições em cursos e livros para aprender algo novo ou ir mais longe no que você já gosta.</p></div>
+            <span class="handwritten benefit-note">investir em você vale muito.</span>
+            <a href="https://ejnbeneficios.escolajovensdenegocios.com/" aria-label="Consultar benefícios de educação na plataforma">Ver benefícios de educação <svg class="bi " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><use href="#bi-arrow-up-right"></use></svg></a>
+          </article>
+          <article class="benefit-card benefit-row" data-reveal>
+            <div class="card-top"><span class="line-icon"><svg class="bi " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><use href="#bi-heart-pulse"></use></svg></span><span class="card-number">SAÚDE</span></div>
+            <div><h3>Cuidar de você.<br>Sem deixar para depois.</h3><p>Consulte as vantagens em saúde e medicamentos oferecidas pelos parceiros.</p></div>
+            <a href="https://ejnbeneficios.escolajovensdenegocios.com/" aria-label="Consultar benefícios de saúde na plataforma"><svg class="bi " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><use href="#bi-arrow-up-right"></use></svg></a>
+          </article>
+          <article class="benefit-card benefit-row" data-reveal>
+            <div class="card-top"><span class="line-icon"><svg class="bi " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><use href="#bi-ticket-perforated"></use></svg></span><span class="card-number">LAZER & CULTURA</span></div>
+            <div><h3>“Bora no cinema?”<br>Essa é fácil de responder.</h3><p>Veja as condições em cinema, lazer e cultura antes de combinar o próximo rolê.</p></div>
+            <a href="https://ejnbeneficios.escolajovensdenegocios.com/" aria-label="Consultar benefícios de lazer na plataforma"><svg class="bi " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><use href="#bi-arrow-up-right"></use></svg></a>
+          </article>
+          <article class="benefit-card benefit-row" data-reveal>
+            <div class="card-top"><span class="line-icon"><svg class="bi " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><use href="#bi-bus-front"></use></svg></span><span class="card-number">MOBILIDADE</span></div>
+            <div><h3>Da aula para o trabalho.<br>E de lá, para onde der.</h3><p>Conheça os benefícios em transporte e as condições disponíveis para seus trajetos.</p></div>
+            <a href="https://ejnbeneficios.escolajovensdenegocios.com/" aria-label="Consultar benefícios de mobilidade na plataforma"><svg class="bi " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><use href="#bi-arrow-up-right"></use></svg></a>
+          </article>
+        </div>
+        <p class="availability">As ofertas, os parceiros e as condições de uso são informados na plataforma.</p>
       </div>
     </section>
 
     <section class="platform-section section" id="como-funciona">
       <div class="container platform-grid">
-        <div class="platform-visual" aria-label="Ilustração das categorias de benefícios">
-          <div class="visual-dots"></div>
-          <div class="club-card"><div class="club-top"><img src="./assets/logo-ejn.webp" alt="EJN Benefícios" width="160" height="40"><span>SEU CLUBE</span></div><p>Seu próximo passo<br>começa <em>aqui.</em></p><div class="club-bottom"><span>MAIS OPORTUNIDADES PARA VOCÊ</span><span aria-hidden="true">↗</span></div></div>
-          <div class="mini-category mini-one"><span class="line-icon" data-icon="book"></span> Aprender</div><div class="mini-category mini-two"><span class="line-icon" data-icon="ticket"></span> Aproveitar</div><div class="mini-category mini-three"><span class="line-icon" data-icon="heart"></span> Se cuidar</div>
-          <span class="visual-note">UM CLUBE. MUITAS POSSIBILIDADES.</span>
+        <div class="platform-visual" data-reveal>
+          <p class="handwritten card-note">pega o seu e vem.</p>
+          <div class="card-stage">
+            <div class="club-card" tabindex="0" role="group" aria-label="Cartão EJN Benefícios interativo" aria-describedby="card-help">
+              <div class="card-sheen" aria-hidden="true"></div>
+              <div class="club-top"><img src="./assets/logo-ejn.webp" alt="EJN Benefícios" width="600" height="113" loading="lazy" decoding="async"><span>SEU CLUBE</span></div>
+              <p>O seu dia.<br>Com <em>mais jogo.</em></p>
+              <div class="club-card-art" aria-hidden="true"><svg class="bi " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><use href="#bi-stars"></use></svg><svg class="bi " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><use href="#bi-book"></use></svg><svg class="bi " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><use href="#bi-ticket-perforated"></use></svg></div>
+              <div class="club-bottom"><span>APRENDER. VIVER. APROVEITAR.</span><svg class="bi " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><use href="#bi-arrow-up-right"></use></svg></div>
+            </div>
+          </div>
+          <div class="card-controls" aria-label="Controles do cartão">
+            <button type="button" class="card-control" data-card-step="-1" aria-label="Mover cartão para a esquerda"><svg class="bi " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><use href="#bi-arrow-left"></use></svg></button>
+            <span class="card-instruction"><svg class="bi " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><use href="#bi-hand-index-thumb"></use></svg> Arraste para os lados</span>
+            <button type="button" class="card-control" data-card-step="1" aria-label="Mover cartão para a direita"><svg class="bi point-right" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><use href="#bi-arrow-left"></use></svg></button>
+            <button type="button" class="card-reset">Centralizar</button>
+          </div>
+          <p id="card-help" class="sr-only">Arraste horizontalmente. Com o cartão em foco, use as setas para movê-lo e Home para centralizar. Também é possível usar os botões abaixo.</p>
+          <p class="sr-only" id="card-status" role="status" aria-live="polite"></p>
         </div>
-        <div class="platform-copy"><p class="eyebrow">SIMPLES ASSIM</p><h2>Seu próximo benefício<br>está a poucos <span>cliques.</span></h2><p>Conheça o clube e encontre vantagens que combinam com você, direto na plataforma EJN Benefícios.</p>
-          <ol class="steps"><li><span>01</span><div><h3>Entre para o clube</h3><p>Acesse a plataforma e selecione “Criar conta” para começar seu cadastro.</p></div></li><li><span>02</span><div><h3>Encontre a sua próxima vantagem</h3><p>Explore as categorias e consulte as ofertas e condições dos parceiros.</p></div></li><li><span>03</span><div><h3>Aproveite do seu jeito</h3><p>Siga as orientações de cada benefício e leve mais possibilidades para sua rotina.</p></div></li></ol>
-          <a class="button" href="https://ejnbeneficios.escolajovensdenegocios.com/">Conhecer a plataforma <span aria-hidden="true">↗</span></a>
+        <div class="platform-copy">
+          <div data-reveal><p class="eyebrow">02 / SEM COMPLICAÇÃO</p><h2>Abriu a plataforma.<br><span>Encontrou sua vantagem.</span></h2><p>O cadastro e a consulta dos benefícios acontecem no mesmo lugar.</p></div>
+          <ol class="steps">
+            <li data-reveal><span>01</span><div><h3>Crie sua conta</h3><p>Acesse a plataforma e escolha “Criar conta”. Preencha os dados do cadastro.</p></div></li>
+            <li data-reveal><span>02</span><div><h3>Veja o que combina com você</h3><p>Explore as categorias. Confira o parceiro, a oferta e as regras de uso.</p></div></li>
+            <li data-reveal><span>03</span><div><h3>Use seu benefício</h3><p>Siga as orientações da oferta. Ficou com dúvida? A equipe EJN ajuda pelo WhatsApp.</p></div></li>
+          </ol>
+          <a class="button" href="https://ejnbeneficios.escolajovensdenegocios.com/">Abrir a plataforma <svg class="bi " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><use href="#bi-arrow-up-right"></use></svg></a>
         </div>
       </div>
     </section>
 
-    <section class="section partners" id="parceiros"><div class="container"><div class="section-heading"><div><p class="eyebrow">CONEXÕES QUE GERAM VALOR</p><h2>Bom para você.<br><span>Bom para quem está junto.</span></h2></div><p>Uma rede que aproxima pessoas e negócios.<br>Conheça alguns dos parceiros apresentados pela EJN.</p></div><div class="partner-grid"><div><img src="./assets/galo-ze.png" alt="Galo Zé" width="180" height="100" loading="lazy"></div><div><img src="./assets/mestre-cuca.png" alt="Mestre Cuca" width="180" height="100" loading="lazy"></div><div><img src="./assets/tiquinho.png" alt="Tiquinho" width="180" height="100" loading="lazy"></div><div class="partner-invite"><span>Sua empresa<br>também pode fazer parte.</span><a href="https://api.whatsapp.com/send?phone=5517982254444&amp;text=Ol%C3%A1!%20Quero%20saber%20como%20ser%20parceiro%20do%20EJN%20Benef%C3%ADcios." aria-label="Conversar com a EJN sobre parceria no WhatsApp">↗</a></div></div><p class="availability">Ofertas e participação dos parceiros estão sujeitas à confirmação na plataforma.</p></div></section>
+    <section class="section partners" id="parceiros">
+      <div class="container">
+        <div class="section-heading" data-reveal><div><p class="eyebrow">03 / QUEM ESTÁ JUNTO</p><h2>Você talvez já<br><span>conheça esses nomes.</span></h2></div><p>Alguns dos negócios apresentados pela EJN.<br>Confira na plataforma quais ofertas estão disponíveis hoje.</p></div>
+        <div class="partner-grid" data-reveal>
+          <div><img src="./assets/galo-ze.webp" alt="Galo Zé" width="240" height="240" loading="lazy" decoding="async"></div>
+          <div><img src="./assets/mestre-cuca.webp" alt="Mestre Cuca" width="240" height="240" loading="lazy" decoding="async"></div>
+          <div><img src="./assets/tiquinho.webp" alt="Tiquinho" width="240" height="240" loading="lazy" decoding="async"></div>
+          <div class="partner-invite"><span>Tem um negócio?<br><strong>Vem para essa rede.</strong></span><a href="https://api.whatsapp.com/send?phone=5517982254444&amp;text=Ol%C3%A1!%20Quero%20ser%20parceiro%20do%20EJN%20Benef%C3%ADcios." aria-label="Conversar sobre parceria no WhatsApp"><svg class="bi " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><use href="#bi-arrow-up-right"></use></svg></a></div>
+        </div>
+      </div>
+    </section>
 
-    <section class="institute-section" id="instituto"><div class="container institute-grid"><div class="institute-statement"><p class="eyebrow">BENEFÍCIOS COM PROPÓSITO</p><h2>O presente é seu.<br>O futuro, a gente<br><span>transforma junto.</span></h2><div class="institute-symbol" aria-hidden="true">↗</div></div><div class="institute-copy"><span class="small-label">ESCOLA JOVENS DE NEGÓCIOS</span><h3>Acreditamos no potencial<br>de quem está começando.</h3><p>O EJN Benefícios é uma iniciativa da Escola Jovens de Negócios, uma organização que transforma vidas por meio da educação empreendedora.</p><p>Nossa missão é capacitar jovens de 14 a 18 anos para enfrentar os desafios da vida com coragem, conhecimento e determinação.</p><a class="text-link light-link" href="https://escolajovensdenegocios.com/">Conheça o Instituto EJN <span aria-hidden="true">↗</span></a></div></div></section>
+    <section class="institute-section" id="instituto">
+      <div class="container institute-grid">
+        <div class="institute-statement" data-reveal><p class="eyebrow">04 / DE ONDE A GENTE VEM</p><h2>Antes do cartão,<br>vem a vontade<br>de <span>fazer acontecer.</span></h2><p class="handwritten">e isso começa com educação.</p></div>
+        <div class="institute-copy" data-reveal><span class="small-label">ESCOLA JOVENS DE NEGÓCIOS · RIO PRETO, SP</span><h3>Empreender também<br>é aprender a escolher.</h3><p>A Escola Jovens de Negócios é uma organização que trabalha com educação empreendedora para jovens de 14 a 18 anos.</p><p>O EJN Benefícios faz parte dessa história: aproximar jovens de oportunidades e facilitar escolhas do dia a dia, com uma rede de negócios parceiros.</p><a class="text-link light-link" href="https://escolajovensdenegocios.com/">Conheça o Instituto EJN <svg class="bi " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><use href="#bi-arrow-up-right"></use></svg></a></div>
+      </div>
+    </section>
 
-    <section class="section faq-section" id="duvidas"><div class="container faq-grid"><div><p class="eyebrow">PODE PERGUNTAR</p><h2>Ficou com<br>alguma <span>dúvida?</span></h2><p>A gente ajuda você a dar o próximo passo.</p><a class="text-link" href="https://api.whatsapp.com/send?phone=5517982254444&amp;text=Ol%C3%A1!%20Tenho%20uma%20d%C3%BAvida%20sobre%20o%20EJN%20Benef%C3%ADcios.">Fale com a gente <span aria-hidden="true">↗</span></a></div><div class="faq-list"><details open><summary>Quem pode fazer parte do EJN Benefícios?<span aria-hidden="true">+</span></summary><p>Jovens, estudantes, aprendizes, estagiários e também empreendedores podem conhecer as vantagens do clube. Consulte com a equipe as condições de adesão para o seu perfil.</p></details><details><summary>Como faço para começar?<span aria-hidden="true">+</span></summary><p>Acesse a plataforma pelo botão “Quero fazer parte” e selecione “Criar conta”. Se precisar de ajuda no cadastro, fale com a equipe pelo WhatsApp.</p></details><details><summary>Quais benefícios vou encontrar?<span aria-hidden="true">+</span></summary><p>O clube apresenta vantagens em educação, saúde, lazer, cultura e mobilidade. A disponibilidade, as regras de uso e as ofertas de cada parceiro devem ser consultadas na plataforma.</p></details><details><summary>O EJN Benefícios é um vale-alimentação?<span aria-hidden="true">+</span></summary><p>Não. O EJN Benefícios é um clube de vantagens em diferentes áreas do dia a dia. Consulte as condições de cada benefício antes de utilizar.</p></details><details><summary>Minha empresa pode ser parceira?<span aria-hidden="true">+</span></summary><p>Sim! Entre em contato com a equipe pelo WhatsApp para conhecer as possibilidades de parceria e como apresentar sua empresa à comunidade EJN.</p></details></div></div></section>
+    <section class="section faq-section" id="duvidas">
+      <div class="container faq-grid">
+        <div data-reveal><p class="eyebrow">05 / CONVERSA DIRETA</p><h2>Antes de entrar,<br><span>pode perguntar.</span></h2><p>Se a sua dúvida não está aqui,<br>manda uma mensagem para a gente.</p><a class="text-link" href="https://api.whatsapp.com/send?phone=5517982254444&amp;text=Ol%C3%A1!%20Tenho%20uma%20d%C3%BAvida%20sobre%20o%20EJN%20Benef%C3%ADcios."><svg class="bi " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><use href="#bi-hand-index-thumb"></use></svg> Falar com a EJN <svg class="bi " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><use href="#bi-arrow-up-right"></use></svg></a></div>
+        <div class="faq-list">
+          <details open data-reveal><summary>Quem pode fazer parte? <svg class="bi " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><use href="#bi-plus"></use></svg></summary><p>Jovens, estudantes, aprendizes, estagiários e também empreendedores podem conhecer as vantagens do clube. Consulte com a equipe as condições de adesão para o seu perfil.</p></details>
+          <details data-reveal><summary>Como faço meu cadastro? <svg class="bi " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><use href="#bi-plus"></use></svg></summary><p>Abra a plataforma pelo botão “Quero fazer parte” e escolha “Criar conta”. Se precisar de ajuda, fale com a equipe pelo WhatsApp.</p></details>
+          <details data-reveal><summary>Quais benefícios estão disponíveis? <svg class="bi " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><use href="#bi-plus"></use></svg></summary><p>O clube apresenta vantagens em educação, saúde, lazer, cultura e mobilidade. Na plataforma, você encontra os parceiros, as ofertas disponíveis e as regras para usar cada benefício.</p></details>
+          <details data-reveal><summary>É um vale-alimentação? <svg class="bi " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><use href="#bi-plus"></use></svg></summary><p>Não. O EJN Benefícios é um clube de vantagens em diferentes áreas do dia a dia. Consulte as condições de cada benefício antes de utilizar.</p></details>
+          <details data-reveal><summary>Minha empresa pode ser parceira? <svg class="bi " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><use href="#bi-plus"></use></svg></summary><p>Sim. Fale com a equipe pelo WhatsApp para conhecer as possibilidades de parceria e apresentar sua empresa à comunidade EJN.</p></details>
+        </div>
+      </div>
+    </section>
 
-    <section class="final-cta"><div class="container"><span class="cta-star" aria-hidden="true">✦</span><p class="eyebrow">MAIS OPORTUNIDADES PARA A SUA PRÓXIMA FASE</p><h2>Seu futuro tem potencial.<br>Seu presente tem <span>EJN.</span></h2><p>Descubra um mundo de vantagens que combina com você.</p><a class="button button-white" href="https://ejnbeneficios.escolajovensdenegocios.com/">Quero fazer parte <span aria-hidden="true">↗</span></a></div></section>
+    <section class="final-cta">
+      <div class="container final-cta-inner" data-reveal><div><p class="eyebrow">E AÍ, VAMOS?</p><h2>Seu próximo rolê.<br>Seu próximo curso.<br><span class="handwritten">Seu próximo passo.</span></h2></div><div class="final-cta-action"><p>Comece conhecendo os benefícios.<br>O que vier depois é com você.</p><a class="button button-white" href="https://ejnbeneficios.escolajovensdenegocios.com/">Quero fazer parte <svg class="bi " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><use href="#bi-arrow-up-right"></use></svg></a></div></div>
+    </section>
   </main>
-  <footer><div class="container"><div class="footer-top"><div><a class="logo" href="#" aria-label="EJN Benefícios — início"><img src="./assets/logo-ejn.webp" alt="EJN Benefícios" width="200" height="50" loading="lazy"></a><p>Mais oportunidades para<br>a sua próxima fase.</p></div><div><h3>Explore</h3><a href="#beneficios">Benefícios</a><a href="#como-funciona">Como funciona</a><a href="https://ejnbeneficios.escolajovensdenegocios.com/">Acessar plataforma ↗</a></div><div><h3>Vamos conversar</h3><a href="https://api.whatsapp.com/send?phone=5517982254444">(17) 98225-4444</a><a href="mailto:escolajovensdenegocios.oficial@gmail.com">Envie um e-mail ↗</a><a href="https://escolajovensdenegocios.com/">Conheça a EJN ↗</a></div><div class="footer-address"><h3>Onde estamos</h3><p>Av. Domingos Falavina, 235<br>Jardim Mugnaini<br>São José do Rio Preto · SP</p></div></div><div class="footer-bottom"><p>© <span id="year">2026</span> Escola Jovens de Negócios. Todos os direitos reservados.</p><p>CNPJ 51.708.193/0001-70</p><a href="#">De volta ao topo ↑</a></div></div></footer>
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div><a class="logo" href="#" aria-label="EJN Benefícios — início"><img src="./assets/logo-ejn.webp" alt="EJN Benefícios" width="600" height="113" loading="lazy" decoding="async"></a><p>Vantagens para o seu dia.<br>Uma iniciativa da Escola Jovens de Negócios.</p></div>
+        <div><h3>Explore</h3><a href="#beneficios">Benefícios</a><a href="#como-funciona">Como funciona</a><a href="https://ejnbeneficios.escolajovensdenegocios.com/">Acessar plataforma <svg class="bi " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><use href="#bi-arrow-up-right"></use></svg></a></div>
+        <div><h3>Vamos conversar</h3><a href="https://api.whatsapp.com/send?phone=5517982254444">(17) 98225-4444</a><a href="mailto:escolajovensdenegocios.oficial@gmail.com">Envie um e-mail <svg class="bi " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><use href="#bi-arrow-up-right"></use></svg></a><a href="https://escolajovensdenegocios.com/">Conheça a EJN <svg class="bi " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><use href="#bi-arrow-up-right"></use></svg></a></div>
+        <div class="footer-address"><h3>Onde estamos</h3><p>Av. Domingos Falavina, 235<br>Jardim Mugnaini<br>São José do Rio Preto · SP</p></div>
+      </div>
+      <div class="footer-bottom"><p>© <span id="year">2026</span> Escola Jovens de Negócios. Todos os direitos reservados.</p><p>CNPJ 51.708.193/0001-70</p><a href="#">De volta ao topo <svg class="bi " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><use href="#bi-arrow-up"></use></svg></a></div>
+    </div>
+  </footer>
 </body>
 </html>

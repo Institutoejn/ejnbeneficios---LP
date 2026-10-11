@@ -15,10 +15,16 @@ test('LP pública serve a página e todos os recursos locais sem autenticação'
       const resource = await fetch(`${base}/${match[1]}`);
       assert.equal(resource.status, 200, match[1]);
     }
-    for (const path of ['/.git/config', '/package.json', '/scripts/server.mjs', '/assets/%2e%2e%2f.git/config', '/missing']) {
+    for (const path of ['/.git/config', '/package.json', '/scripts/server.mjs', '/design-sources/inter.ttf', '/assets/%2e%2e%2f.git/config', '/missing']) {
       assert.equal((await fetch(base + path)).status, 404, path);
     }
     assert.equal((await fetch(base, { method: 'POST' })).status, 405);
     assert.equal((await fetch(base, { method: 'HEAD' })).status, 200);
+    const font = await fetch(`${base}/assets/inter-latin.woff2`);
+    assert.equal(font.headers.get('content-type'), 'font/woff2');
+    const css = await (await fetch(`${base}/styles.css`)).text();
+    for (const match of css.matchAll(/url\('\.\/([^']+)'\)/g)) {
+      assert.equal((await fetch(`${base}/${match[1]}`)).status, 200, match[1]);
+    }
   } finally { await new Promise(resolve => server.close(resolve)); }
 });
