@@ -51,11 +51,21 @@ Conversão de imagens feita com Sharp (WebP, esforço 6, qualidade 83 na foto, 9
 
 ## Movimento e acessibilidade
 
-- As seções e os ícones entram ao rolar nos dois sentidos. O conteúdo permanece visível sem JavaScript.
-- O cartão inclina ao passar o mouse e acompanha o arraste horizontal, limitado à área disponível. O processamento para quando o cartão está em repouso.
-- Teclado: focalize o cartão e use as setas esquerda/direita; Home ou Escape centralizam. Há também botões para mover e centralizar.
+- As seções aparecem com uma breve transição de opacidade apenas na primeira entrada. A rolagem é nativa e o conteúdo permanece visível sem JavaScript.
+- O cartão gira no próprio eixo vertical ao arrastar, sem deslocamento lateral nem movimento por hover. Não há botões de deslocamento.
+- Teclado: focalize o cartão e use as setas esquerda/direita; Enter ou Espaço viram o cartão, End mostra o verso e Home ou Escape voltam à frente.
 - `touch-action: pan-y` mantém a rolagem vertical no celular. Cancelamento de toque e perda de foco encerram o arraste.
-- `prefers-reduced-motion` desliga entradas animadas, inclinação por hover e transições, inclusive quando a preferência muda com a página aberta. Os controles de posição continuam funcionando sem animação.
+- `prefers-reduced-motion` desliga as entradas animadas, inclusive quando a preferência muda com a página aberta. O giro manual continua disponível.
+
+## Cartão e rodapé institucional
+
+A frente adapta a imagem enviada pelo cliente, com perspectiva corrigida e fundo removido por edição generativa. O original adaptado está em `design-sources/cartao-frente.png`; versões WebP de 640 e 960 px são servidas conforme a tela. O verso é uma composição ilustrativa, pois não foi fornecida uma arte para ele.
+
+O rodapé reproduz o site institucional, com logo, Poppins local (SIL OFL), ícones SVG originais incorporados e links de contato, redes sociais e doação. Esses ícones são uma exceção ao sprite Bootstrap do restante da LP. Os ícones Font Awesome do rodapé seguem a licença CC BY 4.0: https://fontawesome.com/license/free.
+
+O mapa é um iframe externo do Google Maps, carregado sob demanda, com um link direto como alternativa. Sua renderização depende do acesso ao Google; o ambiente de desenvolvimento bloqueou esse acesso. Os testes de navegador substituem apenas essa resposta externa para verificar o restante da página.
+
+Os destinos do rodapé foram preservados como no site de origem. Em particular, o texto `escolajovensdenegocios.oficial@gmail.com` aponta para `mailto:contato.ventureverse@gmail.com`, conforme configurado no site institucional.
 
 ## Verificação
 
@@ -71,4 +81,4 @@ npm run test:browser
 
 Se Playwright e Chromium já estiverem instalados no ambiente, `PLAYWRIGHT_MODULE` pode apontar para o pacote e `BROWSER_EXECUTABLE` para o executável. O servidor de teste é iniciado automaticamente em porta livre.
 
-A suíte verifica cinco larguras de tela, fontes e SVGs locais, ausência de requisições externas, menu, FAQ, arraste nos dois sentidos, teclado, reset, movimento reduzido, reentrada na rolagem e toque com rolagem vertical. Inclui também uma sessão sem JavaScript.
+A suíte verifica cinco larguras de tela, fontes e SVGs locais, menu, FAQ, giro no eixo central, verso, teclado, movimento reduzido, ausência de repetição das animações, links do rodapé e toque com rolagem vertical. Inclui também uma sessão sem JavaScript.
